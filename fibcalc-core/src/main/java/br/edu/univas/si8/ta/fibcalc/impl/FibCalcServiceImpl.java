@@ -13,8 +13,8 @@ public class FibCalcServiceImpl implements FibCalcService{
 	
 	@Override
 	public Result fibcalc(int num) {
-		int fib = FibCalcImpl.fibonacci(num);
-		return new Result().withNum(num).withFib(fib);
+		int res = FibCalcImpl.fibonacci(num);
+		return new Result().withNum(num).withFib(res);
 	}
 
 	
